@@ -1,6 +1,5 @@
 function insertion(arr) {
 
-    let swap = (i, j, arr) => ([arr[i], arr[j]] = [arr[j], arr[i]]);
     for (let i = 1; i < arr.length; i++) {
         let current = arr[i];
         for (var j = i - 1; j >= 0 && arr[j] > current; j--) {
